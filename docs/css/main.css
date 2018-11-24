@@ -1,0 +1,64 @@
+/* 
+*box-sixing-model
+*/
+*:after {
+  box-sizing: border-box;
+}
+/*
+	*для отзывчевых изоброжений
+*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+/*
+	для вертикальноя полоски
+*/
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solit #e9eff3;
+  margin: 1em 0;
+  padding: 0;
+}
+/*
+	ограничить маштобирование окна для ввода текста 
+*/
+textarea {
+  resize: vertical;
+}
+/*
+	остановить обтикание и предотвращение схлопование
+*/
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.block {
+  background: #ffdb4c;
+  padding: 20px;
+  color: #000;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #777;
+}
+.block-bg {
+  background-color: #065a97;
+  padding: 30px 0;
+}
+.block-bg-copyright {
+  background-color: #003f6d;
+  padding: 30px 0;
+}

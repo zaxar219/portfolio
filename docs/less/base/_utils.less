@@ -1,0 +1,47 @@
+/* 
+*box-sixing-model
+*/
+
+*:after {
+	box-sizing: border-box;
+}
+
+/*
+	*для отзывчевых изоброжений
+*/
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/*
+	для вертикальноя полоски
+*/
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solit #e9eff3;
+	margin: 1em 0;
+	padding: 0;
+}
+
+/*
+	ограничить маштобирование окна для ввода текста 
+*/
+textarea {
+	resize: vertical;
+}
+
+/*
+	остановить обтикание и предотвращение схлопование
+*/
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
