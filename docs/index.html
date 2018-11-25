@@ -18,16 +18,49 @@
 <!-----нормалайс и стили-->
 	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="css/main.css">
+<!--------шрифты--------->
+	<link rel="stylesheet" href="fonts/noto-webfont/noto.css">
+	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
 <!--------favicons	-------->
 	<link rel="icon" href="img/favicons/web.ico">
 </head>
 <body>
-	
-	<div class="block">
-		Шапка страницы
+	<!-- Шапка -->
+	<div class="header">
+		<div class="header__inner">
+			<nav class="navigation">
+				<div class="navigation__toggle navigation__toggle--fixed">
+					<i class="fa fa-bars" aria-hidden="true"></i>
+				</div>
+				<ul class="navigation__list">
+					<li><a href="#resume">Резюме</a></li>
+					<li><a href="#portfolio">Портфолио</a></li>
+					<li><a href="#contacts">Контакты</a></li>
+				</ul>
+			</nav>
+			<div class="heder__centered-content">
+				<div class="user-photo user-photo--shadow">
+					<img src="usercontent/img/photo-small.jpg" alt="Захаров Владимир">
+				</div>
+				<h1 class="header__title">Захаров Владимир</h1>
+				<h2 class="header__subtitle">HTML верстальщик сайтов</h2>
+			</div>
+			
+			<a href="#resume" class="mouse_scroll">
+				<div class="mouse">
+					<div class="wheel"></div>
+				</div>
+				<div>
+					<span class="m_scroll_arrows unu"></span>
+					<span class="m_scroll_arrows doi"></span>
+					<span class="m_scroll_arrows trei"></span>
+				</div>
+			</a>
+		</div>
 	</div>
+	<!--// Шапка -->
 	<!-- Резюме -->
-	<div class="container">
+	<div class="container" id="resume">
 		<div class="row">
 			<!-- Фотография-->
 			<div class="hidden-xs col-sm-2 col-lg-3">
@@ -63,7 +96,7 @@
 	<!-- Резюме -->
 	<hr>
 	<!-- Портфолио -->
-	<div class="container">
+	<div class="container" id="portfolio">
 		<div class="block">
 			Портфолио
 		</div>
@@ -112,7 +145,7 @@
 	<!-- //Портфолио -->
 	<!-- Контакты -->
 	<div class="block-bg">
-		<div class="container">
+		<div class="container" id="contacts">
 			<div class="row">
 				<div class="col-sm-6">
 					<div class="block">
@@ -155,6 +188,9 @@
 	
 	
 	<script src="libs/jquery/jquery.min.js"></script>
+	<script src="libs/pagescroll2id/jquery.malihu.PageScroll2id.js"></script>
+	
+	<script src="js/navigation.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>
