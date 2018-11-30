@@ -1,5 +1,5 @@
 .navigation {
-	font-size: 22px;
+	font-size: 18px;
 	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 3px;
@@ -9,6 +9,10 @@
 	
 	@media (min-width: 768px) {
 		position: absolute;
+		
+	}
+	@media (min-width: 1200px) {
+//		display: none;
 	}
 	
 	.navigation__toggle{
@@ -21,9 +25,10 @@
 	cursor: pointer;
 	
 	@media (min-width: 768px) {
+		font-size: 22px;
 		display: none;
+		}
 	}
-}
 
 .navigation__toggle--fixed {
 	position: fixed;
@@ -58,6 +63,14 @@
 			display: block;
 			position: absolute;
 			top: 60;
+			left: 28px;
+		}
+		@media (min-width: 1200px) { 
+			left: -22px;
+			margin-bottom: 34px;
+			margin: 0;
+			padding: 0;
+			display: inline-block;
 		}
 		
 		li {
@@ -69,14 +82,27 @@
 			
 			
 			
-			@media (min-width: 768px) {
+		@media (min-width: 768px) {
+		margin: 0;
+		padding: 0;
+		display: inline-block;
+		margin-right: 42px;
+		font-weight: 700;
+		font-size: 18px;
+		letter-spacing: 2px;
+		}
+				
+		@media (min-width: 1200px) {
 			margin: 0;
 			padding: 0;
 			display: inline-block;
 			margin-right: 100px;
-				
-				&:last-child {
-				margin-right: 0;
+			font-size: 22px;
+			font-weight: 700;
+			letter-spacing: 2px;
+			
+			&:last-child {
+			margin-right: 0;
 				}
 			}
 		}
@@ -90,7 +116,5 @@
 		}
 	}
 }
-
-
 
 
