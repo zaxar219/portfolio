@@ -1,7 +1,7 @@
 /* 
 *box-sixing-model
 */
-*:after {
+* {
   box-sizing: border-box;
 }
 /*
@@ -39,3 +39,15 @@ textarea {
 .clearfix:after {
   clear: both;
 }
+.blocks {
+  width: 100%;
+  margin-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  background-color: #edf516;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #ff0027;
+}
+/*# sourceMappingURL=utils.css.map */

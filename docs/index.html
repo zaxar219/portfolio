@@ -1,382 +1,589 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
 	<meta charset="UTF-8">
-	<title>Portfolio</title>
-	
-<!------точное описание страници-->
+	<title>Real Home Site design</title>
+
+	<!------точное описание страници-->
 	<meta name="description" content="">
-	  
-<!------общее описание страници-->
+
+	<!------общее описание страници-->
 	<meta name="keywords" content="">
-	
-<!------для адоптивной верстки	-------->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	
-<!-----чттобы браузер internet explorer использовал свою последнею версию------->
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-<!-----нормалайс и стили-->
+
+	<!------для адаптивной верстки	-------->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!----- браузер internet explorer использовал свою последнею версию------->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<!-----нормалайс и стили-->
 	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="css/main.css">
-<!--------шрифты--------->
-	<link rel="stylesheet" href="fonts/noto-webfont/noto.css">
+	<!------шрифты------------>
 	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
-<!--------favicons	-------->
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700i|Raleway:300,400,500,700" rel="stylesheet">
+	<!--------Карусель---------->
+	<link rel="stylesheet" href="libs/owl-carousel/owl.carousel.css">
+	<link rel="stylesheet" href="libs/owl-carousel/owl.theme.css">
+	
+	<!--------favicons	-------->
 	<link rel="icon" href="img/favicons/web.ico">
 </head>
+
 <body>
-	<!-- Шапка -->
-	<div class="header">
-		<div class="header__inner">
-			<nav class="navigation">
-				<div class="navigation__toggle navigation__toggle--fixed">
-					<i class="fa fa-bars" aria-hidden="true"></i>
-				</div>
-				<ul class="navigation__list">
-					<li><a href="#resume">Резюме</a></li>
-					<li><a href="#portfolio">Портфолио</a></li>
-					<li><a href="#contacts">Контакты</a></li>
-				</ul>
-			</nav>
-			<div class="heder__centered-content">
-				<div class="user-photo user-photo--shadow">
-					<img src="usercontent/img/photo-small.jpg" alt="Захаров Владимир">
-				</div>
-				<h1 class="header__title">Захаров Владимир</h1>
-				<h2 class="header__subtitle">HTML верстальщик сайтов</h2>
+	<!--- Menu --->
+	<div class="container">
+		<div class="menu">
+		<div class="row">
+			<!--- Логотип --->
+			<div class="col-sm-3">
+				<a class="logo" href="#">
+					<img src="img/logo/logo.png" alt="logo">
+					<!--<div class="logo"></div>-->
+				</a>
 			</div>
-			
-			<a href="#resume" class="mouse_scroll">
-				<div class="mouse">
-					<div class="wheel"></div>
+			<!--- //Логотип --->
+			<!--- Навигация --->
+			<div class="col-sm-9 col-lg-7">
+				<nav class="navigation">
+					<div id="navigation-toggle" class="navigation__toggle-button">
+						<img src="img/logo/logo.png" alt="logo">
+					</div>
+					<ul class="navigation__list">
+						<li class="navigation__list-li"><a class="navigation__list-li-link" href="#">Home</a></li>
+						<li class="navigation__list-li"><a class="navigation__list-li-link" href="#">About Us</a></li>
+						<li class="navigation__list-li"><a class="navigation__list-li-link" href="#">Property</a></li>
+						<li class="navigation__list-li"><a class="navigation__list-li-link" href="#">Our Blog</a></li>
+						<li class="navigation__list-li"><a class="navigation__list-li-link" href="#">Contacts</a></li>
+					</ul>
+				</nav>
+			</div>
+			<!--- //Навигация --->
+			<!--- Социальные иконки --->
+				<div class="col-sm-2">
+					<div class="social-icon">
+						<a class="social-icon__icon" href="#">
+							<div class="social-icon__icon-svg" style="background-image: url('./img/icon/facebook.svg')"></div>
+							<!--<a href="#"><i class="fa fa-facebook-f"></i></a>-->
+						</a>
+						<a class="social-icon__icon" href="#">
+							<div class="social-icon__icon-svg" style="background-image: url('./img/icon/pinterest.svg')"></div>
+							<!--<a href="#"><i class="fa fa-pinterest-p"></i></a>-->
+						</a>
+						<a class="social-icon__icon" href="#">
+							<div class="social-icon__icon-svg" style="background-image: url('./img/icon/instagramm.svg')"></div>
+							<!--<a href="#"><i class="fa fa-instagram"></i></a>-->
+						</a>
+						<a class="social-icon__icon" href="#">
+							<div class="social-icon__icon-svg" style="background-image: url('./img/icon/google.svg')"></div>
+							<!--<a href="#"><i class="fa fa-vk"></i></a>-->
+						</a>
+					</div>
 				</div>
-				<div>
-					<span class="m_scroll_arrows unu"></span>
-					<span class="m_scroll_arrows doi"></span>
-					<span class="m_scroll_arrows trei"></span>
-				</div>
-			</a>
+			<!--- //Социальные иконки --->
+		</div>
 		</div>
 	</div>
-	<!--// Шапка -->
-	<!-- Резюме -->
-	<div id="resume" class="section section--bottom-line section--bg-laptop">
-		<div class="container" >
+	<!--- //Menu --->
+	<!--- слайдер-->
+	<div class="header-slider">
+		<div id="top-slider" class="owl-carusel">
+			<!-- Слайд 1 -->
+			<div class="home-slider" style="background-image: url('./img/room/room-1.png')">
+				<div class="home-slider__title">
+					120 Anastasia Avenue, Coral Gables
+				</div>
+				<div class="home-slider__content">
+					<div class="home-slider__content-price">
+						$625,000
+					</div>
+					<a class="home-slider__content-info" href="#"> MORE INFO</a>
+				</div>
+			</div>
+			<!-- //Слайд 1 -->
+			<!-- Слайд 2 -->
+			<div class="home-slider" style="background-image: url('./img/room/room-2.png')">
+				<div class="home-slider__title">
+					120 Anastasia Avenue, Coral Gables
+				</div>
+				<div class="home-slider__content">
+					<div class="home-slider__content-price">
+						$625,000
+					</div>
+					<a class="home-slider__content-info" href="#"> MORE INFO</a>
+				</div>
+			</div>
+			<!-- //Слайд 2 -->
+			<!-- Слайд 3 -->
+			<div class="home-slider" style="background-image: url('./img/room/room-1.png')">
+				<div class="home-slider__title">
+					120 Anastasia Avenue, Coral Gables
+				</div>
+				<div class="home-slider__content">
+					<div class="home-slider__content-price">
+						$625,000
+					</div>
+					<a class="home-slider__content-info" href="#"> MORE INFO</a>
+				</div>
+			</div>
+			<!-- //Слайд 3 -->
+			<!-- Слайд 4 -->
+			<div class="home-slider" style="background-image: url('./img/room/room-2.png')">
+				<div class="slider__title">
+					120 Anastasia Avenue, Coral Gables
+				</div>
+				<div class="home-slider__content">
+					<div class="home-slider__content-price">
+						$625,000
+					</div>
+					<a class="home-slider__content-info" href="#"> MORE INFO</a>
+				</div>
+			</div>
+			<!-- //Слайд 4 -->
+		</div>
+	</div>
+	<!--- //слайдер-->
+	<!--- Предложение --->
+	<div class="container">
+		<div class="deals">
 			<div class="row">
-				<!-- Фотография-->
-				<div class="hidden-xs col-sm-2 col-lg-3">
-					<div class="user-photo user-photo--big">
-						<img src="usercontent/img/photo-big.jpg" alt="Фото пользователя">
+				<div class="col-sm-4">
+					<div class="deals__state">
+						We are Offering the Best Estate Deals
 					</div>
 				</div>
-				<!-- //Фотография-->
-				<!-- Резюме пользователя-->
-				<div class="col-sm-10 col-lg-9">
-					<div class="heading">
-						Резюме
-					</div>
-					<p class="user">
-						<strong class="user-name">Захаров Владимир</strong><br>
-						27 лет, Кимовск, Россия
-					</p>
-					<p class="user-info">
-						Родился и вырос. Закончил три класса церковно-приходской IT школы. После чего «активно занимался самообразованием».
-					</p>
-					
-					<!---- Опыт и оброзование -->
-					<div class="row">
-						<div class="col-sm-6 pad-rig-21">
-							<div class="heading heading--medium">
-								Опыт работы
-							</div>
-							<ul class="definition-list">
-								<!--- libs 1-->
-								<li class="definition-list--item">
-									<div class="definition-list--item__def">
-										Декабрь — настоящее время 
-									</div>
-									<div class="definition-list--item__desc">
-										<p>
-											Верстальщик в веб-студии “Веб-Старт”.
-										</p>
-									</div>
-								</li>
-								<!--- //libs 1-->
-								<!--- libs 2-->
-								<li class="definition-list--item">
-									<div class="definition-list--item__def">
-										октябрь 2015 — Декабрь 2016
-									</div>
-									<div class="definition-list--item__desc">
-										<p>
-											Фрилансер, веб-дизайнер.
-										</p>
-									</div>
-								</li>
-								<!--- //libs 2-->
-								<!--- libs 3-->
-								<li class="definition-list--item">
-									<div class="definition-list--item__def">
-										Сентбярь 2014 — Октябрь 2015 
-									</div>
-									<div class="definition-list--item__desc">
-										<p>
-											«ООО Кибер Софт» — Системный администратор.
-										</p>
-									</div>
-								</li>
-								<!--- //libs 3-->
-							</ul>
-						</div>
-						<div class="col-sm-6">
-							<div class="heading heading--medium">
-								образование
-							</div>
-							<ul class="definition-list">
-								<!--- libs 1-->
-								<li class="definition-list--item">
-									<div class="definition-list--item__def">
-										декабрь 2016
-									</div>
-									<div class="definition-list--item__desc">
-										<p>
-											Курсы по верстке сайтов HTML5, CSS3 - WebCademy.ru
-										</p>
-									</div>
-								</li>
-								<!--- //libs 1-->
-								<!--- libs 2-->
-								<li class="definition-list--item">
-									<div class="definition-list--item__def">
-										2008 — 2012 
-									</div>
-									<div class="definition-list--item__desc">
-										<p>
-											Московский Государственный университет дизайна и технологий, специальность дизайнер-технолог.
-										</p>
-									</div>
-								</li>
-								<!--- //libs 2-->
-								
-							</ul>
-						</div>
-					</div>
-					<!----// Опыт и оброзование -->
-					<div class="button">
-						<i class="fa fa-download" aria-hidden="true"></i>
-						Скачать резюме
+				<div class="col-sm-8">
+					<div class="deals__description">
+						Quisque diam lorem interdum vitaapibus ac scelerisque vitae pede. Donec eget tellus non erat lacinia fertum. Donec in velit vel ipsum auctovinar. Proin umcorper urna et felisstibulum iaculis lacinia est. Proin dictum elem entum velit fusce euismod. Aenean commodo ligula eget dolor. Aenean massa. Lorem ipsum dolor sit amet, consec tetuer adipis elit, aliquam eget nibh etlibura. Lorem ipsum dolor sitamet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.
 					</div>
 				</div>
-				<!-- //Резюме пользователя-->
 			</div>
 		</div>
 	</div>
-	<!-- //Резюме -->
-	<!-- Портфолио -->
-	<div class="section section--padding-smaller section--bg-gear" id="portfolio">
+	<!--- //Предложение --->
+	<!--- benefit --->
+	<div class="middle">
 		<div class="container">
-			<div class="heading heading--center">
-				Мои работы
-			</div>
-			<!--- Фильтр работ-->
-			<div class="filter">
-				<ul class="filter__block">
-					<li class="filter__element">
-						<span class="filter__button filter__button--active">Все</span>
-					</li>
-					<li class="filter__element">
-						<span class="filter__button">HTML+CSS</span>
-					</li>
-					<li class="filter__element">
-						<span class="filter__button">Bootstrap</span>
-					</li>
-					<li class="filter__element">
-						<span class="filter__button">Учебные</span>
-					</li>
-					<li class="filter__element">
-						<span class="filter__button">На заказ</span>
-					</li>
-				</ul>
-			</div>
-			<!--- //Фильтр работ-->
-			<!--- Ряд с работами --->
 			<div class="row">
-				<!--- Работа 1 Органика --->
-				<div class="col-sm-4">
-					<div class="portfolio-item">
-						<a class="portfolio-item__image">
-								<div class="portfolio-item__image__hover">
-									<i class="fa fa-search" aria-hidden="true"></i>
-									<br>
-									<span>смотреть макет</span>
-								</div>
-								<img src="usercontent/img/project_organica.jpg" alt="Учебный макет Organica">
-						</a>
-						<div class="portfolio-item__title">
-							<a href="#">Учебный макет Organica</a>
+				<!-- card-1 -->
+				<div class="col-sm-3">
+					<div class="benefit">
+						<div class="benefit__icon" style="background-image: url('./img/icon/earth.png')"></div>
+						<div class="benefit__name">
+							Whole World
 						</div>
-						<div class="portfolio-item__description">
-							Верстка одностраничного сайта по PSD макету.
+						<div class="benefit__text">
+							Proin umcorper urna et felisstibulum iaculis lacinia est. Proin dictum elem entum velit fusce euismod. Aenean commodo ligula eget dolor.
 						</div>
 					</div>
 				</div>
-				<!--- //Работа Органика --->
-				<!--- Работа 2 Аполло --->
-				<div class="col-sm-4">
-					<div class="portfolio-item">
-						<a class="portfolio-item__image">
-								<div class="portfolio-item__image__hover">
-									<i class="fa fa-search" aria-hidden="true"></i>
-									<br>
-									<span>смотреть макет</span>
-								</div>
-								<img src="usercontent/img/project_apollo.jpg" alt="Учебный макет Аполло">
-						</a>
-						<div class="portfolio-item__title">
-							<a href="#">Учебный макет Аполло</a>
+				<!-- card-1 -->
+				<!-- card-2 -->
+				<div class="col-sm-3">
+					<div class="benefit">
+						<div class="benefit__icon" style="background-image: url('./img/icon/briefcase.png')"></div>
+						<div class="benefit__name">
+							Confidentially
 						</div>
-						<div class="portfolio-item__description">
-							Верстка лендинга хостинг компании. Мобильная адаптивность.
+						<div class="benefit__text">
+							Proin umcorper urna et felisstibulum iaculis lacinia est. Proin dictum elem entum velit fusce euismod. Aenean commodo ligula eget dolor.
 						</div>
 					</div>
 				</div>
-				<!--- //Работа 2 Аполло --->
-				<!--- Работа 3 Портфолио --->
-				<div class="col-sm-4">
-					<div class="portfolio-item">
-						<a class="portfolio-item__image">
-								<div class="portfolio-item__image__hover">
-									<i class="fa fa-search" aria-hidden="true"></i>
-									<br>
-									<span>смотреть макет</span>
-								</div>
-								<img src="usercontent/img/project_portfolio.jpg" alt="Личный сайт портфолио">
-						</a>
-						<div class="portfolio-item__title">
-							<a href="#">Личный сайт портфолио</a>
+				<!-- //card-2 -->
+				<!-- card-3 -->
+				<div class="col-sm-3">
+					<div class="benefit">
+						<div class="benefit__icon" style="background-image: url('./img/icon/photos.png')"></div>
+						<div class="benefit__name">
+							Good Previews
 						</div>
-						<div class="portfolio-item__description">
-							Верстка личного сайта портфолио на котором вы сейчас находитесь. 
+						<div class="benefit__text">
+							Proin umcorper urna et felisstibulum iaculis lacinia est. Proin dictum elem entum velit fusce euismod. Aenean commodo ligula eget dolor.
 						</div>
 					</div>
 				</div>
-				<!--- //Работа 3 Портфолио --->
-				<!--- Работа 4 Авто --->
-				<div class="col-sm-4">
-					<div class="portfolio-item">
-						<a class="portfolio-item__image">
-								<div class="portfolio-item__image__hover">
-									<i class="fa fa-search" aria-hidden="true"></i>
-									<br>
-									<span>смотреть макет</span>
-								</div>
-								<img src="usercontent/img/project_auto.jpg" alt="Промо сайт автомобиля">
-						</a>
-						<div class="portfolio-item__title">
-							<a href="#">Промо сайт автомобиля</a>
+				<!-- //card-3 -->
+				<!-- card-4 -->
+				<div class="col-sm-3">
+					<div class="benefit">
+						<div class="benefit__icon" style="background-image: url('./img/icon/file-drawer.png')"></div>
+						<div class="benefit__name">
+							Confidentially
 						</div>
-						<div class="portfolio-item__description">
-							Верстка сайта для презентации концепта автомобиля
+						<div class="benefit__text">
+							Proin umcorper urna et felisstibulum iaculis lacinia est. Proin dictum elem entum velit fusce euismod. Aenean commodo ligula eget dolor.
 						</div>
 					</div>
 				</div>
-				<!--- //Работа 4 Авто --->
-				<!--- Работа 5 Мото --->
-				<div class="col-sm-4">
-					<div class="portfolio-item">
-						<a class="portfolio-item__image">
-								<div class="portfolio-item__image__hover">
-									<i class="fa fa-search" aria-hidden="true"></i>
-									<br>
-									<span>смотреть макет</span>
-								</div>
-								<img src="usercontent/img/project_moto.jpg" alt="Магазин мотоциклов">
-						</a>
-						<div class="portfolio-item__title">
-							<a href="#">Магазин мотоциклов</a>
-						</div>
-						<div class="portfolio-item__description">
-							Верстка лендинга для компании Indian Motorcycles.
-						</div>
-					</div>
-				</div>
-				<!--- //Работа 5 Мото --->
-				<!--- Работа 6 Аудео --->
-				<div class="col-sm-4">
-					<div class="portfolio-item">
-						<a class="portfolio-item__image">
-								<div class="portfolio-item__image__hover">
-									<i class="fa fa-search" aria-hidden="true"></i>
-									<br>
-									<span>смотреть макет</span>
-								</div>
-								<img src="usercontent/img/project_music.jpg" alt="Магазин аудиотехники">
-						</a>
-						<div class="portfolio-item__title">
-							<a href="#">Магазин аудиотехники</a>
-						</div>
-						<div class="portfolio-item__description">
-							Верстка страниц для магазина винтажной аудиотехники.
-						</div>
-					</div>
-				</div>
-				<!--- //Работа 6 Аудео --->
-				
-			</div>
-			
-			<!--- //Ряд с работами --->
-		</div>
-	</div>
-	<!-- //Портфолио -->
-	<!-- Контакты -->
-	<div class="block-bg">
-		<div class="container" id="contacts">
-			<div class="row">
-				<div class="col-sm-6">
-					<div class="block">
-						Контакты - текст
-					</div>
-					<div class="row">
-						<div class="col-lg-6">
-							<div class="block">
-								Email
-							</div>
-						</div>
-						<div class="col-lg-6">
-							<div class="block">
-								Телефон
-							</div>
-						</div>
-					</div>
-					<div class="block">
-						Социальные иконки
-					</div>
-				</div>
-				<div class="col-sm-6">
-					<div class="block">
-						Форма
-					</div>
-				</div>
+				<!-- //card-4 -->
 			</div>
 		</div>
 	</div>
-	<!-- //Контакты -->
-	<!-- Копирайт-->
-	<div class="block-bg-copyright">
+	<!--- //benefit --->
+	<!--- properties --->
+	<div class="properties">
 		<div class="container">
-			<div class="block">
-				Копирайт
+			<div class="row">
+				<div class="col-sm-6 col-sm-offset-3">
+					<div class="headline">
+						<div class="headline__name">
+							Featured <div class="headline__name--big">Properties</div>
+						</div>
+						<div class="headline__border"></div>
+						<div class="headline__text">
+							Quisque diam lorem interdum vitaapibus vitae pede. Donec eget tellus non erat lacinia fertum. Donec in velit vel ipsum auctovinar.
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<!--- card-1 --->
+				<div class="col-sm-6 col-md-4">
+					<div class="rent-card">
+						<div class="rent-card__png" style="background-image: url('./img/card/card-1.png')"></div>
+						<div class="rent-card__work">
+							1450 Cloudcroft Drop
+						</div>
+						<div class="rent-card__where">
+							Illinois / Chicago
+						</div>
+						<div class="rent-card__price">
+							$250,000
+						</div>
+						<div class="rent-card__feedback">
+							<div class="rent-card__feedback-commit">400 Sq Ft</div>
+							<div class="rent-card__feedback-commit rent-card__feedback-commit--point">2 Bedrooms</div>
+							<div class="rent-card__feedback-commit rent-card__feedback-commit--point">1 Bathroom</div>
+						</div>
+					</div>
+				</div>
+				<!--- //card-1 --->
+				<!--- card-2 --->
+				<div class="col-sm-6 col-md-4">
+					<div class="rent-card">
+						<div class="rent-card__png" style="background-image: url('./img/card/card-2.png')"></div>
+						<div class="rent-card__work">
+							140 Small Village
+						</div>
+						<div class="rent-card__where">
+							Missouri / Kansas City
+						</div>
+						<div class="rent-card__price">
+							$200,000
+						</div>
+						<div class="rent-card__feedback">
+							<div class="rent-card__feedback-commit">400 Sq Ft</div>
+							<div class="rent-card__feedback-commit rent-card__feedback-commit--point">2 Bedrooms</div>
+							<div class="rent-card__feedback-commit rent-card__feedback-commit--point">1 Bathroom</div>
+						</div>
+					</div>
+				</div>
+				<!--- //card-2 --->
+				<!--- card-3 --->
+				<div class="col-sm-6 col-md-4">
+					<div class="rent-card">
+						<div class="rent-card__png" style="background-image: url('./img/card/card-3.png')"></div>
+						<div class="rent-card__work">
+							1250 Lake House
+						</div>
+						<div class="rent-card__where">
+							Colorado / Denver
+						</div>
+						<div class="rent-card__price">
+							$339,000
+						</div>
+						<div class="rent-card__feedback">
+							<div class="rent-card__feedback-commit">400 Sq Ft</div>
+							<div class="rent-card__feedback-commit rent-card__feedback-commit--point">2 Bedrooms</div>
+							<div class="rent-card__feedback-commit rent-card__feedback-commit--point">1 Bathroom</div>
+						</div>
+					</div>
+				</div>
+				<!--- //card-3 --->
+				<!--- card-4 --->
+				<div class="col-sm-6 col-md-4">
+					<div class="rent-card">
+						<div class="rent-card__png" style="background-image: url('./img/card/card-4.png')"></div>
+						<div class="rent-card__work">
+							1450 Cloudcroft Drop
+						</div>
+						<div class="rent-card__where">
+							Illinois / Chicago
+						</div>
+						<div class="rent-card__price">
+							$250,000
+						</div>
+						<div class="rent-card__feedback">
+							<div class="rent-card__feedback-commit">400 Sq Ft</div>
+							<div class="rent-card__feedback-commit rent-card__feedback-commit--point">2 Bedrooms</div>
+							<div class="rent-card__feedback-commit rent-card__feedback-commit--point">1 Bathroom</div>
+						</div>
+					</div>
+				</div>
+				<!--- //card-4 --->
+				<!--- card-5 --->
+				<div class="col-sm-6 col-md-4">
+					<div class="rent-card">
+						<div class="rent-card__png" style="background-image: url('./img/card/card-5.png')"></div>
+						<div class="rent-card__work">
+							140 Small Village
+						</div>
+						<div class="rent-card__where">
+							Missouri / Kansas City
+						</div>
+						<div class="rent-card__price">
+							$200,000
+						</div>
+						<div class="rent-card__feedback">
+							<div class="rent-card__feedback-commit">400 Sq Ft</div>
+							<div class="rent-card__feedback-commit rent-card__feedback-commit--point">2 Bedrooms</div>
+							<div class="rent-card__feedback-commit rent-card__feedback-commit--point">1 Bathroom</div>
+						</div>
+					</div>
+				</div>
+				<!--- //card-5 --->
+				<!--- card-6 --->
+				<div class="col-sm-6 col-md-4">
+					<div class="rent-card">
+						<div class="rent-card__png" style="background-image: url('./img/card/card-6.png')"></div>
+						<div class="rent-card__work">
+							1250 Lake House
+						</div>
+						<div class="rent-card__where">
+							Colorado / Denver
+						</div>
+						<div class="rent-card__price">
+							$339,000
+						</div>
+						<div class="rent-card__feedback">
+							<div class="rent-card__feedback-commit">400 Sq Ft</div>
+							<div class="rent-card__feedback-commit rent-card__feedback-commit--point">2 Bedrooms</div>
+							<div class="rent-card__feedback-commit rent-card__feedback-commit--point">1 Bathroom</div>
+						</div>
+					</div>
+				</div>
+				<!--- //card-6 --->
+				<div class="clearfix"></div>
+				<!--- button --->
+				<a class="button" href="#">
+						all properties
+				</a>
+				<!--- //button --->
 			</div>
 		</div>
 	</div>
-	<!-- //Копирайт-->
-	
-	
-	<script src="libs/jquery/jquery.min.js"></script>
-	<script src="libs/pagescroll2id/jquery.malihu.PageScroll2id.js"></script>
-	
-	<script src="js/navigation.js"></script>
+	<!--- //properties --->
+	<!--  Агенты  -->
+	<div class="container">
+		<div class="agents">
+			<div class="row">
+				<div class="col-sm-6 col-sm-offset-4">
+					<div class="our-agens">
+						Our <div class="our-agens__bold">Agents</div>
+					</div>
+				</div>
+			</div>
+			<div id="agents-slider" class="owl-carusel">
+				<!--- Слайд аент 1-->
+				<div class="staff">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="staff__photo">
+								<img src="img/photo/photo-man.png" alt="photo">
+							</div>
+						</div>
+						<div class="col-sm-8">
+							<div class="staff__slider-border"></div>
+							<div class="staff__name">
+								Lisa Gerrard
+							</div>
+							<div class="staff__taxt">
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, raesent luptatum zzril delenit augue duis dolore te feugait nulla nonummy nibh euismod tincidunt facilisi.
+							</div>
+							<div class="staff__contect">
+								<div class="staff__contect-phon-icon" style="background-image: url('./img/icon/phon.png')"></div>
+								<div class="staff__contect-phon">
+									+ 7 (123) 456-78-99
+								</div>
+								<div class="staff__contect-email-icon" style="background-image: url('./img/icon/email.png')"></div>
+								<div class="staff__contect-email">
+									<a href="#">lisa.gerrard@realhome.com</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--- //Слайд аент 1-->
+				<!--- Слайд аент 2-->
+				<div class="staff">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="staff__photo">
+								<img src="img/photo/photo-woman.png" alt="photo">
+							</div>
+						</div>
+						<div class="col-sm-8">
+							<div class="staff__slider-border"></div>
+							<div class="staff__name">
+								Lisa Gerrard
+							</div>
+							<div class="staff__taxt">
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, raesent luptatum zzril delenit augue duis dolore te feugait nulla nonummy nibh euismod tincidunt facilisi.
+							</div>
+							<div class="staff__contect">
+								<div class="staff__contect-phon-icon" style="background-image: url('./img/icon/phon.png')"></div>
+								<div class="staff__contect-phon">
+									+ 7 (123) 456-78-99
+								</div>
+								<div class="staff__contect-email-icon" style="background-image: url('./img/icon/email.png')"></div>
+								<div class="staff__contect-email">
+									<a href="#">lisa.gerrard@realhome.com</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--- //Слайд аент 2-->
+				<!--- Слайд аент 3-->
+				<div class="staff">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="staff__photo">
+								<img src="img/photo/photo-man.png" alt="photo">
+							</div>
+						</div>
+						<div class="col-sm-8">
+							<div class="staff__slider-border"></div>
+							<div class="staff__name">
+								Lisa Gerrard
+							</div>
+							<div class="staff__taxt">
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, raesent luptatum zzril delenit augue duis dolore te feugait nulla nonummy nibh euismod tincidunt facilisi.
+							</div>
+							<div class="staff__contect">
+								<div class="staff__contect-phon-icon" style="background-image: url('./img/icon/phon.png')"></div>
+								<div class="staff__contect-phon">
+									+ 7 (123) 456-78-99
+								</div>
+								<div class="staff__contect-email-icon" style="background-image: url('./img/icon/email.png')"></div>
+								<div class="staff__contect-email">
+									<a href="#">lisa.gerrard@realhome.com</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--- //Слайд аент 3-->
+			</div>
+		</div>
+	</div> 
+	<!--  //Агенты  -->
+	<!-- buying -->
+	<div class="buying">
+		<div class="container">
+			<div class="buying__hom">
+				Get Started on Buying Your <div class="buying__hom-big">New Home</div>
+			</div>
+			<a class="button button--float-right" href="#">more about us</a>
+		</div>
+	</div>
+	<!-- //buying -->
+	<!-- slider-bottom -->
+	<div class="slider-bottom" style="background-image: url('./img/fon/slyfyd.png')">
+		<div class="container">
+			<div class="slider-bottom__testimonials">
+				Testimonials 
+			</div>
+			<div class="slider-bottom__border"></div>
+			<div id="bottom-slider" class="owl-carusel">
+			<!-- slid 1-->
+			<div class="slider-bottom__content">
+				<div class="slider-bottom__description">
+					Liber tempor cum soluta eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum, typin no habent claritatem insitam legentis qui facit eorum claritatem. 
+				</div>
+				<div class="slider-bottom__aftor">
+					Amanda Seyfried, Apple
+				</div>
+			</div>
+			<!-- //slid 1-->
+			<!-- slid 2-->
+			<div class="slider-bottom__content">
+				<div class="slider-bottom__description">
+					Liber tempor cum soluta eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum, typin no habent claritatem insitam legentis qui facit eorum claritatem. 
+				</div>
+				<div class="slider-bottom__aftor">
+					Amanda Seyfried, Apple
+				</div>
+			</div>
+			<!-- //slid 2-->
+			<!-- slid 3-->
+			<div class="slider-bottom__content">
+				<div class="slider-bottom__description">
+					Liber tempor cum soluta eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum, typin no habent claritatem insitam legentis qui facit eorum claritatem. 
+				</div>
+				<div class="slider-bottom__aftor">
+					Amanda Seyfried, Apple
+				</div>
+			</div>
+			<!-- //slid 3-->
+			<!-- slid 4-->
+			<div class="slider-bottom__content">
+				<div class="slider-bottom__description">
+					Liber tempor cum soluta eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum, typin no habent claritatem insitam legentis qui facit eorum claritatem. 
+				</div>
+				<div class="slider-bottom__aftor">
+					Amanda Seyfried, Apple
+				</div>
+			</div>
+			<!-- //slid 4-->
+		</div>
+		</div>
+	</div>
+	<!-- //slider-bottom -->
+	<!-- Partners -->
+	<div class="container">
+		<div class="partners">
+			<div class="partners__section">
+				Our <div class="partners__section-big">Partners</div>
+			</div>
+			<img src="img/partners/icon-1.png" alt="partner">
+			<img src="img/partners/icon-2.png" alt="partner">
+			<img src="img/partners/icon-3.png" alt="partner">
+			<img src="img/partners/icon-4.png" alt="partner">
+		</div>
+	</div>
+	<!-- //Partners -->
+	<div class="row">
+		<div class="col-sm-3">
+			<div class="blocks">
+				колонка
+			</div>
+		</div>
+		<div class="col-sm-3">
+			<div class="blocks">
+				колонка
+			</div>
+		</div>
+		<div class="col-sm-3">
+			<div class="blocks">
+				колонка
+			</div>
+		</div>
+		<div class="col-sm-3">
+			<div class="blocks">
+				колонка
+			</div>
+		</div>
+	</div>
+
+
+
+	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	<script src="libs/owl-carousel/owl.carousel.min.js"></script>
+
 	<script src="js/main.js"></script>
 </body>
+
 </html>
 <!-- -->
