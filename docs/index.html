@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Real Home Site design</title>
+	<title>Portfolio</title>
 
 	<!------точное описание страници-->
 	<meta name="description" content="">
@@ -11,577 +11,527 @@
 	<!------общее описание страници-->
 	<meta name="keywords" content="">
 
-	<!------для адаптивной верстки	-------->
+	<!------для адоптивной верстки	-------->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<!----- браузер internet explorer использовал свою последнею версию------->
+	<!-----чттобы браузер internet explorer использовал свою последнею версию------->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<!-----нормалайс и стили-->
 	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="css/main.css">
-	<!------шрифты------------>
+	<!--------шрифты--------->
+	<link rel="stylesheet" href="fonts/noto-webfont/noto.css">
 	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700i|Raleway:300,400,500,700" rel="stylesheet">
-	<!--------Карусель---------->
-	<link rel="stylesheet" href="libs/owl-carousel/owl.carousel.css">
-	<link rel="stylesheet" href="libs/owl-carousel/owl.theme.css">
-	
+	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css">
 	<!--------favicons	-------->
 	<link rel="icon" href="img/favicons/web.ico">
 </head>
 
 <body>
-	<!--- Menu --->
-	<div class="container">
-		<div class="menu">
-		<div class="row">
-			<!--- Логотип --->
-			<div class="col-sm-3">
-				<a class="logo" href="#">
-					<img src="img/logo/logo.png" alt="logo">
-					<!--<div class="logo"></div>-->
+	<!-- Шапка -->
+	<div class="header">
+		<div class="header__inner">
+
+			<nav class="navigation">
+
+				<button id="navigation__button" class="cmn-toggle-switch cmn-toggle-switch__htx">
+					<span>toggle menu</span>
+				</button>
+
+
+				<!--- Navigation icon --->
+				<!--
+					<div class="navigation__toggle navigation__toggle--fixed">
+						<i class="fa fa-bars" aria-hidden="true"></i>
+					</div>
+				-->
+				<!--- //Navigation icon --->
+
+
+				<ul class="navigation__list">
+					<li><a href="#resume">Резюме</a></li>
+					<li><a href="#portfolio">Портфолио</a></li>
+					<li><a href="#contacts">Контакты</a></li>
+				</ul>
+			</nav>
+			<div class="heder__centered-content">
+				<div class="user-photo user-photo--shadow">
+					<img src="usercontent/img/my-photo_photo-110.jpg" alt="Захаров Владимир">
+				</div>
+				<h1 class="header__title">Захаров Владимир</h1>
+				<h2 class="header__subtitle">HTML верстальщик сайтов</h2>
+			</div>
+			<nav>
+				<a href="#resume" class="mouse_scroll">
+					<div class="mouse">
+						<div class="wheel"></div>
+					</div>
+					<div>
+						<span class="m_scroll_arrows unu"></span>
+						<span class="m_scroll_arrows doi"></span>
+						<span class="m_scroll_arrows trei"></span>
+					</div>
 				</a>
-			</div>
-			<!--- //Логотип --->
-			<!--- Навигация --->
-			<div class="col-sm-9 col-lg-7">
-				<nav class="navigation">
-					<div id="navigation-toggle" class="navigation__toggle-button">
-						<img src="img/logo/logo.png" alt="logo">
-					</div>
-					<ul class="navigation__list">
-						<li class="navigation__list-li"><a class="navigation__list-li-link" href="#">Home</a></li>
-						<li class="navigation__list-li"><a class="navigation__list-li-link" href="#">About Us</a></li>
-						<li class="navigation__list-li"><a class="navigation__list-li-link" href="#">Property</a></li>
-						<li class="navigation__list-li"><a class="navigation__list-li-link" href="#">Our Blog</a></li>
-						<li class="navigation__list-li"><a class="navigation__list-li-link" href="#">Contacts</a></li>
-					</ul>
-				</nav>
-			</div>
-			<!--- //Навигация --->
-			<!--- Социальные иконки --->
-				<div class="col-sm-2">
-					<div class="social-icon">
-						<a class="social-icon__icon" href="#">
-							<div class="social-icon__icon-svg" style="background-image: url('./img/icon/facebook.svg')"></div>
-							<!--<a href="#"><i class="fa fa-facebook-f"></i></a>-->
-						</a>
-						<a class="social-icon__icon" href="#">
-							<div class="social-icon__icon-svg" style="background-image: url('./img/icon/pinterest.svg')"></div>
-							<!--<a href="#"><i class="fa fa-pinterest-p"></i></a>-->
-						</a>
-						<a class="social-icon__icon" href="#">
-							<div class="social-icon__icon-svg" style="background-image: url('./img/icon/instagramm.svg')"></div>
-							<!--<a href="#"><i class="fa fa-instagram"></i></a>-->
-						</a>
-						<a class="social-icon__icon" href="#">
-							<div class="social-icon__icon-svg" style="background-image: url('./img/icon/google.svg')"></div>
-							<!--<a href="#"><i class="fa fa-vk"></i></a>-->
-						</a>
-					</div>
-				</div>
-			<!--- //Социальные иконки --->
-		</div>
+			</nav>
 		</div>
 	</div>
-	<!--- //Menu --->
-	<!--- слайдер-->
-	<div class="header-slider">
-		<div id="top-slider" class="owl-carusel">
-			<!-- Слайд 1 -->
-			<div class="home-slider" style="background-image: url('./img/room/room-1.png')">
-				<div class="home-slider__title">
-					120 Anastasia Avenue, Coral Gables
-				</div>
-				<div class="home-slider__content">
-					<div class="home-slider__content-price">
-						$625,000
-					</div>
-					<a class="home-slider__content-info" href="#"> MORE INFO</a>
-				</div>
-			</div>
-			<!-- //Слайд 1 -->
-			<!-- Слайд 2 -->
-			<div class="home-slider" style="background-image: url('./img/room/room-2.png')">
-				<div class="home-slider__title">
-					120 Anastasia Avenue, Coral Gables
-				</div>
-				<div class="home-slider__content">
-					<div class="home-slider__content-price">
-						$625,000
-					</div>
-					<a class="home-slider__content-info" href="#"> MORE INFO</a>
-				</div>
-			</div>
-			<!-- //Слайд 2 -->
-			<!-- Слайд 3 -->
-			<div class="home-slider" style="background-image: url('./img/room/room-1.png')">
-				<div class="home-slider__title">
-					120 Anastasia Avenue, Coral Gables
-				</div>
-				<div class="home-slider__content">
-					<div class="home-slider__content-price">
-						$625,000
-					</div>
-					<a class="home-slider__content-info" href="#"> MORE INFO</a>
-				</div>
-			</div>
-			<!-- //Слайд 3 -->
-			<!-- Слайд 4 -->
-			<div class="home-slider" style="background-image: url('./img/room/room-2.png')">
-				<div class="slider__title">
-					120 Anastasia Avenue, Coral Gables
-				</div>
-				<div class="home-slider__content">
-					<div class="home-slider__content-price">
-						$625,000
-					</div>
-					<a class="home-slider__content-info" href="#"> MORE INFO</a>
-				</div>
-			</div>
-			<!-- //Слайд 4 -->
-		</div>
-	</div>
-	<!--- //слайдер-->
-	<!--- Предложение --->
-	<div class="container">
-		<div class="deals">
-			<div class="row">
-				<div class="col-sm-4">
-					<div class="deals__state">
-						We are Offering the Best Estate Deals
-					</div>
-				</div>
-				<div class="col-sm-8">
-					<div class="deals__description">
-						Quisque diam lorem interdum vitaapibus ac scelerisque vitae pede. Donec eget tellus non erat lacinia fertum. Donec in velit vel ipsum auctovinar. Proin umcorper urna et felisstibulum iaculis lacinia est. Proin dictum elem entum velit fusce euismod. Aenean commodo ligula eget dolor. Aenean massa. Lorem ipsum dolor sit amet, consec tetuer adipis elit, aliquam eget nibh etlibura. Lorem ipsum dolor sitamet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!--- //Предложение --->
-	<!--- benefit --->
-	<div class="middle">
+	<!--// Шапка -->
+	<!-- Резюме -->
+	<div id="resume" class="section section--bottom-line section--bg-laptop">
 		<div class="container">
 			<div class="row">
-				<!-- card-1 -->
-				<div class="col-sm-3">
-					<div class="benefit">
-						<div class="benefit__icon" style="background-image: url('./img/icon/earth.png')"></div>
-						<div class="benefit__name">
-							Whole World
-						</div>
-						<div class="benefit__text">
-							Proin umcorper urna et felisstibulum iaculis lacinia est. Proin dictum elem entum velit fusce euismod. Aenean commodo ligula eget dolor.
-						</div>
+				<!-- Фотография-->
+				<div class="hidden-xs col-sm-2 col-lg-3">
+					<div class="user-photo user-photo--big">
+						<img src="usercontent/img/my-photo_photo-222.jpg" alt="Фото пользователя">
 					</div>
 				</div>
-				<!-- card-1 -->
-				<!-- card-2 -->
-				<div class="col-sm-3">
-					<div class="benefit">
-						<div class="benefit__icon" style="background-image: url('./img/icon/briefcase.png')"></div>
-						<div class="benefit__name">
-							Confidentially
-						</div>
-						<div class="benefit__text">
-							Proin umcorper urna et felisstibulum iaculis lacinia est. Proin dictum elem entum velit fusce euismod. Aenean commodo ligula eget dolor.
-						</div>
+				<!-- //Фотография-->
+				<!-- Резюме пользователя-->
+				<div class="col-sm-10 col-lg-9">
+					<div class="heading">
+						Резюме
 					</div>
-				</div>
-				<!-- //card-2 -->
-				<!-- card-3 -->
-				<div class="col-sm-3">
-					<div class="benefit">
-						<div class="benefit__icon" style="background-image: url('./img/icon/photos.png')"></div>
-						<div class="benefit__name">
-							Good Previews
-						</div>
-						<div class="benefit__text">
-							Proin umcorper urna et felisstibulum iaculis lacinia est. Proin dictum elem entum velit fusce euismod. Aenean commodo ligula eget dolor.
-						</div>
-					</div>
-				</div>
-				<!-- //card-3 -->
-				<!-- card-4 -->
-				<div class="col-sm-3">
-					<div class="benefit">
-						<div class="benefit__icon" style="background-image: url('./img/icon/file-drawer.png')"></div>
-						<div class="benefit__name">
-							Confidentially
-						</div>
-						<div class="benefit__text">
-							Proin umcorper urna et felisstibulum iaculis lacinia est. Proin dictum elem entum velit fusce euismod. Aenean commodo ligula eget dolor.
-						</div>
-					</div>
-				</div>
-				<!-- //card-4 -->
-			</div>
-		</div>
-	</div>
-	<!--- //benefit --->
-	<!--- properties --->
-	<div class="properties">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-6 col-sm-offset-3">
-					<div class="headline">
-						<div class="headline__name">
-							Featured <div class="headline__name--big">Properties</div>
-						</div>
-						<div class="headline__border"></div>
-						<div class="headline__text">
-							Quisque diam lorem interdum vitaapibus vitae pede. Donec eget tellus non erat lacinia fertum. Donec in velit vel ipsum auctovinar.
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<!--- card-1 --->
-				<div class="col-sm-6 col-md-4">
-					<div class="rent-card">
-						<div class="rent-card__png" style="background-image: url('./img/card/card-1.png')"></div>
-						<div class="rent-card__work">
-							1450 Cloudcroft Drop
-						</div>
-						<div class="rent-card__where">
-							Illinois / Chicago
-						</div>
-						<div class="rent-card__price">
-							$250,000
-						</div>
-						<div class="rent-card__feedback">
-							<div class="rent-card__feedback-commit">400 Sq Ft</div>
-							<div class="rent-card__feedback-commit rent-card__feedback-commit--point">2 Bedrooms</div>
-							<div class="rent-card__feedback-commit rent-card__feedback-commit--point">1 Bathroom</div>
-						</div>
-					</div>
-				</div>
-				<!--- //card-1 --->
-				<!--- card-2 --->
-				<div class="col-sm-6 col-md-4">
-					<div class="rent-card">
-						<div class="rent-card__png" style="background-image: url('./img/card/card-2.png')"></div>
-						<div class="rent-card__work">
-							140 Small Village
-						</div>
-						<div class="rent-card__where">
-							Missouri / Kansas City
-						</div>
-						<div class="rent-card__price">
-							$200,000
-						</div>
-						<div class="rent-card__feedback">
-							<div class="rent-card__feedback-commit">400 Sq Ft</div>
-							<div class="rent-card__feedback-commit rent-card__feedback-commit--point">2 Bedrooms</div>
-							<div class="rent-card__feedback-commit rent-card__feedback-commit--point">1 Bathroom</div>
-						</div>
-					</div>
-				</div>
-				<!--- //card-2 --->
-				<!--- card-3 --->
-				<div class="col-sm-6 col-md-4">
-					<div class="rent-card">
-						<div class="rent-card__png" style="background-image: url('./img/card/card-3.png')"></div>
-						<div class="rent-card__work">
-							1250 Lake House
-						</div>
-						<div class="rent-card__where">
-							Colorado / Denver
-						</div>
-						<div class="rent-card__price">
-							$339,000
-						</div>
-						<div class="rent-card__feedback">
-							<div class="rent-card__feedback-commit">400 Sq Ft</div>
-							<div class="rent-card__feedback-commit rent-card__feedback-commit--point">2 Bedrooms</div>
-							<div class="rent-card__feedback-commit rent-card__feedback-commit--point">1 Bathroom</div>
-						</div>
-					</div>
-				</div>
-				<!--- //card-3 --->
-				<!--- card-4 --->
-				<div class="col-sm-6 col-md-4">
-					<div class="rent-card">
-						<div class="rent-card__png" style="background-image: url('./img/card/card-4.png')"></div>
-						<div class="rent-card__work">
-							1450 Cloudcroft Drop
-						</div>
-						<div class="rent-card__where">
-							Illinois / Chicago
-						</div>
-						<div class="rent-card__price">
-							$250,000
-						</div>
-						<div class="rent-card__feedback">
-							<div class="rent-card__feedback-commit">400 Sq Ft</div>
-							<div class="rent-card__feedback-commit rent-card__feedback-commit--point">2 Bedrooms</div>
-							<div class="rent-card__feedback-commit rent-card__feedback-commit--point">1 Bathroom</div>
-						</div>
-					</div>
-				</div>
-				<!--- //card-4 --->
-				<!--- card-5 --->
-				<div class="col-sm-6 col-md-4">
-					<div class="rent-card">
-						<div class="rent-card__png" style="background-image: url('./img/card/card-5.png')"></div>
-						<div class="rent-card__work">
-							140 Small Village
-						</div>
-						<div class="rent-card__where">
-							Missouri / Kansas City
-						</div>
-						<div class="rent-card__price">
-							$200,000
-						</div>
-						<div class="rent-card__feedback">
-							<div class="rent-card__feedback-commit">400 Sq Ft</div>
-							<div class="rent-card__feedback-commit rent-card__feedback-commit--point">2 Bedrooms</div>
-							<div class="rent-card__feedback-commit rent-card__feedback-commit--point">1 Bathroom</div>
-						</div>
-					</div>
-				</div>
-				<!--- //card-5 --->
-				<!--- card-6 --->
-				<div class="col-sm-6 col-md-4">
-					<div class="rent-card">
-						<div class="rent-card__png" style="background-image: url('./img/card/card-6.png')"></div>
-						<div class="rent-card__work">
-							1250 Lake House
-						</div>
-						<div class="rent-card__where">
-							Colorado / Denver
-						</div>
-						<div class="rent-card__price">
-							$339,000
-						</div>
-						<div class="rent-card__feedback">
-							<div class="rent-card__feedback-commit">400 Sq Ft</div>
-							<div class="rent-card__feedback-commit rent-card__feedback-commit--point">2 Bedrooms</div>
-							<div class="rent-card__feedback-commit rent-card__feedback-commit--point">1 Bathroom</div>
-						</div>
-					</div>
-				</div>
-				<!--- //card-6 --->
-				<div class="clearfix"></div>
-				<!--- button --->
-				<a class="button" href="#">
-						all properties
-				</a>
-				<!--- //button --->
-			</div>
-		</div>
-	</div>
-	<!--- //properties --->
-	<!--  Агенты  -->
-	<div class="container">
-		<div class="agents">
-			<div class="row">
-				<div class="col-sm-6 col-sm-offset-4">
-					<div class="our-agens">
-						Our <div class="our-agens__bold">Agents</div>
-					</div>
-				</div>
-			</div>
-			<div id="agents-slider" class="owl-carusel">
-				<!--- Слайд аент 1-->
-				<div class="staff">
+					<p class="user">
+						<strong class="user-name">
+							Захаров Владимир
+							<p>27 лет, Кимовск, Россия</p>
+						</strong><br>
+					</p>
+					<!--
+					<p class="user-info">
+						Родился и вырос. Закончил три класса церковно-приходской IT школы. После чего «активно занимался самообразованием».
+					</p>
+-->
+
+					<!---- Опыт и оброзование -->
 					<div class="row">
-						<div class="col-sm-4">
-							<div class="staff__photo">
-								<img src="img/photo/photo-man.png" alt="photo">
+						<div class="col-sm-6 pad-rig-21">
+							<div class="heading heading--medium">
+								Опыт работы
 							</div>
+							<ul class="definition-list">
+								<!--- libs 1-->
+								<li class="definition-list--item">
+									<div class="definition-list--item__def">
+										Декабрь 2018 — настоящее время
+									</div>
+									<div class="definition-list--item__desc">
+										<p>
+											Верстальщик.
+										</p>
+									</div>
+								</li>
+								<!--- //libs 1-->
+								<!--- libs 2-->
+								<!--
+							<li class="definition-list--item">
+								<div class="definition-list--item__def">
+									октябрь 2015 — Декабрь 2016
+								</div>
+								<div class="definition-list--item__desc">
+									<p>
+										Фрилансер, веб-дизайнер.
+									</p>
+								</div>
+							</li>
+						-->
+								<!--- //libs 2-->
+								<!--- libs 3-->
+								<!--
+							<li class="definition-list--item">
+								<div class="definition-list--item__def">
+									Сентбярь 2014 — Октябрь 2015 
+								</div>
+								<div class="definition-list--item__desc">
+									<p>
+										«ООО Кибер Софт» — Системный администратор.
+									</p>
+								</div>
+							</li>
+						-->
+								<!--- //libs 3-->
+							</ul>
 						</div>
-						<div class="col-sm-8">
-							<div class="staff__slider-border"></div>
-							<div class="staff__name">
-								Lisa Gerrard
+						<div class="col-sm-6">
+							<div class="heading heading--medium">
+								Образование
 							</div>
-							<div class="staff__taxt">
-								Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, raesent luptatum zzril delenit augue duis dolore te feugait nulla nonummy nibh euismod tincidunt facilisi.
-							</div>
-							<div class="staff__contect">
-								<div class="staff__contect-phon-icon" style="background-image: url('./img/icon/phon.png')"></div>
-								<div class="staff__contect-phon">
-									+ 7 (123) 456-78-99
+							<ul class="definition-list">
+								<!--- libs 1-->
+								<li class="definition-list--item">
+									<div class="definition-list--item__def">
+										декабрь 2018
+									</div>
+									<div class="definition-list--item__desc">
+										<p>
+											Курсы по верстке сайтов HTML5, CSS3 - WebCademy.ru
+										</p>
+									</div>
+								</li>
+								<!--- //libs 1-->
+								<!--- libs 2-->
+								<!--
+							<li class="definition-list--item">
+								<div class="definition-list--item__def">
+									2008 — 2012 
 								</div>
-								<div class="staff__contect-email-icon" style="background-image: url('./img/icon/email.png')"></div>
-								<div class="staff__contect-email">
-									<a href="#">lisa.gerrard@realhome.com</a>
+								<div class="definition-list--item__desc">
+									<p>
+										Московский Государственный университет дизайна и технологий, специальность дизайнер-технолог.
+									</p>
 								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!--- //Слайд аент 1-->
-				<!--- Слайд аент 2-->
-				<div class="staff">
-					<div class="row">
-						<div class="col-sm-4">
-							<div class="staff__photo">
-								<img src="img/photo/photo-woman.png" alt="photo">
-							</div>
-						</div>
-						<div class="col-sm-8">
-							<div class="staff__slider-border"></div>
-							<div class="staff__name">
-								Lisa Gerrard
-							</div>
-							<div class="staff__taxt">
-								Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, raesent luptatum zzril delenit augue duis dolore te feugait nulla nonummy nibh euismod tincidunt facilisi.
-							</div>
-							<div class="staff__contect">
-								<div class="staff__contect-phon-icon" style="background-image: url('./img/icon/phon.png')"></div>
-								<div class="staff__contect-phon">
-									+ 7 (123) 456-78-99
-								</div>
-								<div class="staff__contect-email-icon" style="background-image: url('./img/icon/email.png')"></div>
-								<div class="staff__contect-email">
-									<a href="#">lisa.gerrard@realhome.com</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!--- //Слайд аент 2-->
-				<!--- Слайд аент 3-->
-				<div class="staff">
-					<div class="row">
-						<div class="col-sm-4">
-							<div class="staff__photo">
-								<img src="img/photo/photo-man.png" alt="photo">
-							</div>
-						</div>
-						<div class="col-sm-8">
-							<div class="staff__slider-border"></div>
-							<div class="staff__name">
-								Lisa Gerrard
-							</div>
-							<div class="staff__taxt">
-								Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, raesent luptatum zzril delenit augue duis dolore te feugait nulla nonummy nibh euismod tincidunt facilisi.
-							</div>
-							<div class="staff__contect">
-								<div class="staff__contect-phon-icon" style="background-image: url('./img/icon/phon.png')"></div>
-								<div class="staff__contect-phon">
-									+ 7 (123) 456-78-99
-								</div>
-								<div class="staff__contect-email-icon" style="background-image: url('./img/icon/email.png')"></div>
-								<div class="staff__contect-email">
-									<a href="#">lisa.gerrard@realhome.com</a>
-								</div>
-							</div>
+							</li>
+						-->
+								<!--- //libs 2-->
+
+							</ul>
 						</div>
 					</div>
+					<!----// Опыт и оброзование -->
+					<a href="usercontent/pdf/Владимир-Захаров-html-coder.pdf" target="_blank">
+						<div class="button-rezume">
+
+							<i class="fa fa-download" aria-hidden="true"></i>
+							Скачать резюме
+
+						</div>
+					</a>
 				</div>
-				<!--- //Слайд аент 3-->
+				<!-- //Резюме пользователя-->
 			</div>
 		</div>
-	</div> 
-	<!--  //Агенты  -->
-	<!-- buying -->
-	<div class="buying">
+	</div>
+	<!-- //Резюме -->
+	<!-- Портфолио -->
+	<div class="section section--padding-smaller section--bg-gear" id="portfolio">
 		<div class="container">
-			<div class="buying__hom">
-				Get Started on Buying Your <div class="buying__hom-big">New Home</div>
+			<!--- Заголовок --->
+			<div class="heading heading--center">
+				Мои работы
 			</div>
-			<a class="button button--float-right" href="#">more about us</a>
+			<!--- //Заголовок --->
+
+			<!--- Фильтр работ-->
+			<div class="filter-block">
+				<ul class="filter-block__block">
+					<li class="filter-block__element">
+						<span class="filter-block__button filter filter-block__button--active" data-filter="all">Все</span>
+					</li>
+					<li class="filter-block__element">
+						<span class="filter-block__button filter" data-filter=".html-css">HTML+CSS</span>
+					</li>
+					<li class="filter-block__element">
+						<span class="filter-block__button filter" data-filter=".bootstrap">Bootstrap</span>
+					</li>
+					<li class="filter-block__element">
+						<span class="filter-block__button filter" data-filter=".tutorial">Учебные</span>
+					</li>
+					<li class="filter-block__element">
+						<span class="filter-block__button filter" data-filter=".payed">На заказ</span>
+					</li>
+				</ul>
+			</div>
+			<!--- //Фильтр работ-->
+			<!--- Ряд с работами --->
+			<div class="row" id="portfolio-projects">
+				
+				<!--- Работа 2 Аполло --->
+				<div class="col-sm-6 col-md-4 m-b-34 mix bootstrap tutorial">
+					<div class="portfolio-item">
+						<div class="portfolio-item__card">
+							<div class="portfolio-item__card-block">
+								<div class="portfolio-item__card-block-side back" style="background-image: url('./usercontent/img/project_apollo.jpg')">
+								</div>
+								<div class="portfolio-item__card-block-side portfolio-item__card-block-side--blackout front" style="background-image: url('./usercontent/img/project_apollo.jpg')">
+									<div class="portfolio-item__card-block-side__links">
+										<a class="button fancybox" href="usercontent/img/works/apollo.png" rel="group">Посмотреть скриншот</a>
+										<a class="button" href="https://github.com/zaxar219/training-apollo" target="_blank">Посмотреть код</a>
+										<a class="button" href="https://zaxar219.github.io/test-apollo/" target="_blank">Перейти на сайт</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="portfolio-item__title">
+							<a href="https://zaxar219.github.io/dz/#" target="_blank">Учебный макет Аполло</a>
+						</div>
+						<div class="portfolio-item__description">
+							Верстка лендинга хостинг компании. Мобильная адаптивность.
+						</div>
+					</div>
+				</div>
+				<!--- //Работа 2 Аполло --->
+				<!--- Работа 3 Портфолио --->
+				<div class="col-sm-6 col-md-4 m-b-34 mix bootstrap tutorial">
+					<div class="portfolio-item">
+						<div class="portfolio-item__card">
+							<div class="portfolio-item__card-block">
+								<div class="portfolio-item__card-block-side back" style="background-image: url('./usercontent/img/project_portfolio.jpg')">
+								</div>
+								<div class="portfolio-item__card-block-side portfolio-item__card-block-side--blackout front" style="background-image: url('./usercontent/img/project_portfolio.jpg')">
+									<div class="portfolio-item__card-block-side__links">
+										<a class="button fancybox" href="usercontent/img/works/portfolio.png" rel="group">Посмотреть скриншот</a>
+										<a class="button" href="https://github.com/zaxar219/my-portfolio" target="_blank">Посмотреть код</a>
+										<a class="button" href="http://zakhar.zzz.com.ua/" target="_blank">Перейти на сайт</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="portfolio-item__title">
+							<a href="https://zaxar219.github.io/my-portfolio/" target="_blank">Личный сайт портфолио</a>
+						</div>
+						<div class="portfolio-item__description">
+							Верстка личного сайта портфолио на котором вы сейчас находитесь.
+						</div>
+					</div>
+				</div>
+				<!--- //Работа 3 Портфолио --->
+				<!--- Работа 4 Недвижемость --->
+				<div class="col-sm-6 col-md-4 mix bootstrap tutorial">
+					<div class="portfolio-item">
+						<div class="portfolio-item__card">
+							<div class="portfolio-item__card-block">
+								<div class="portfolio-item__card-block-side back" style="background-image: url('./usercontent/img/realhome.jpg')">
+								</div>
+								<div class="portfolio-item__card-block-side portfolio-item__card-block-side--blackout front" style="background-image: url('./usercontent/img/realhome.jpg')">
+									<div class="portfolio-item__card-block-side__links">
+										<a class="button fancybox" href="usercontent/img/works/realhome.jpg" rel="group">Посмотреть скриншот</a>
+										<a class="button" href="https://github.com/zaxar219/home" target="_blank">Посмотреть код</a>
+										<a class="button" href="https://zaxar219.github.io/home/"  target="_blank">Перейти на сайт</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="portfolio-item__title">
+							<a href="https://zaxar219.github.io/home/" target="_blank">Промо сайт недвижимости</a>
+						</div>
+						<div class="portfolio-item__description">
+							Верстка сайта для презентации предложений недвижимости
+						</div>
+					</div>
+				</div>
+				<!--- //Работа 4 Недвижемость --->
+				<!--- Работа 5 Грузоперевозки --->
+				<div class="col-sm-6 col-md-4 mix payed bootstrap">
+					<div class="portfolio-item">
+						<div class="portfolio-item__card">
+							<div class="portfolio-item__card-block">
+								<div class="portfolio-item__card-block-side back" style="background-image: url('./usercontent/img/gruzden-min.jpg')">
+								</div>
+								<div class="portfolio-item__card-block-side portfolio-item__card-block-side--blackout front" style="background-image: url('./usercontent/img/gruzden-min.jpg')">
+									<div class="portfolio-item__card-block-side__links">
+										<a class="button fancybox" href="usercontent/img/works/gruzden.png" rel="group">Посмотреть скриншот</a>
+										<a class="button" href="https://github.com/zaxar219/gruzoperevozki/tree/master/docs" target="_blank">Посмотреть код</a>
+										<a class="button" href="http://gruzden.ru/" target="_blank">Перейти на сайт</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="portfolio-item__title">
+							<a href="https://zaxar219.github.io/home/" target="_blank">Сайт грузоперевозки</a>
+						</div>
+						<div class="portfolio-item__description">
+							Верстка лендинга.
+							Мобильная адаптивность.
+							Установка на хостинг.
+							Продвижение.
+						</div>
+					</div>
+				</div>
+				<!--- //Работа 5 Грузоперевозки --->
+				<!--- Работа 1 Органика --->
+				<div class="col-sm-6 col-md-4 m-b-34 mix html-css tutorial">
+					<div class="portfolio-item">
+						<div class="portfolio-item__card">
+							<div class="portfolio-item__card-block">
+								<div class="portfolio-item__card-block-side back" style="background-image: url('./usercontent/img/project_organica.jpg')">
+								</div>
+								<div class="portfolio-item__card-block-side portfolio-item__card-block-side--blackout front" style="background-image: url('./usercontent/img/project_organica.jpg')">
+									<div class="portfolio-item__card-block-side__links">
+										<a class="button fancybox" href="usercontent/img/works/organic.png" rel="group">Посмотреть скриншот</a>
+										<a class="button" href="https://github.com/zaxar219/dz-organic" target="_blank">Посмотреть код</a>
+										<a class="button" href="https://zaxar219.github.io/dz-organic/" target="_blank">Перейти на сайт</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="portfolio-item__title">
+							<a href="https://zaxar219.github.io/dz-organic/" target="_blank">Учебный макет Organica</a>
+						</div>
+						<div class="portfolio-item__description">
+							Верстка одностраничного сайта по PSD макету.
+						</div>
+					</div>
+				</div>
+				<!--- //Работа 1 Органика --->
+			</div>
+			<!--- //Ряд с работами --->
 		</div>
 	</div>
-	<!-- //buying -->
-	<!-- slider-bottom -->
-	<div class="slider-bottom" style="background-image: url('./img/fon/slyfyd.png')">
+	<!-- //Портфолио -->
+	<!-- Контакты -->
+	<div class="block-bg contacts section section--padding-smaller section--bg-cloub">
+
+		<div class="paticles-section" id="paticlesbg"></div>
+
+		<div class="container" id="contacts">
+			<div class="row">
+				<!--- Контакты - Текст --->
+				<div class="col-sm-6 p-t-13">
+					<div class="heading heading--white">
+						Контакты
+					</div>
+					<div class="contacts__description">
+						<p>Если вы ищите специалиста по верстке сайтов, front-end разработчика в команду или для работы над проектом — я к вашим услугам.</p>
+					</div>
+
+					<div class="row">
+						<div class="col-lg-6">
+
+							<ul class="definition-list">
+								<!--- libs 1-->
+								<li class="definition-list--item">
+									<div class="definition-list--item__def definition-list--item__def--light definition-list--item__def--bigger">
+										Email
+									</div>
+									<div class="definition-list--item__desc">
+										<p>
+											<a href="mailto:zaxar219@mail.ru">zaxar219@mail.ru</a>
+										</p>
+									</div>
+								</li>
+							</ul>
+
+							<ul class="definition-list">
+								<!--- libs 1-->
+								<li class="definition-list--item">
+									<div class="definition-list--item__def definition-list--item__def--light definition-list--item__def--bigger">
+										SKYPE
+									</div>
+									<div class="definition-list--item__desc">
+										<p>
+											<a href="skype:live:zaxar219?chat">live:zaxar219</a>
+										</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-6">
+
+							<ul class="definition-list">
+								<!--- libs 1-->
+								<li class="definition-list--item">
+									<div class="definition-list--item__def definition-list--item__def--light definition-list--item__def--bigger">
+										телефон
+									</div>
+									<div class="definition-list--item__desc">
+										<p>
+											<a href="tel:+79258821831">+7 (925) 882-18-31</a>
+										</p>
+									</div>
+								</li>
+							</ul>
+
+							<ul class="definition-list">
+								<!--- libs 1-->
+								<li class="definition-list--item">
+									<div class="definition-list--item__def definition-list--item__def--light definition-list--item__def--bigger">
+										Адрес
+									</div>
+									<div class="definition-list--item__desc">
+										<p>
+											Россия, Кимовск
+										</p>
+									</div>
+								</li>
+							</ul>
+
+
+
+						</div>
+
+						<ul class="definition-list">
+							<!--- libs 1-->
+							<li class="definition-list--item">
+								<div class="definition-list--item__def definition-list--item__def--light definition-list--item__def--bigger icon-m-l">
+									Социальные сети
+								</div>
+								<div class="definition-list--item__desc icon-m-l">
+									<div class="social-icons">
+										<a href="https://vk.com/id252660605" target="_blank" class="fa fa-vk" aria-hidden="true"></a>
+										<!--<a href="#" class="fa fa-twitter" aria-hidden="true"></a>-->
+										<!--<a href="#" class="fa fa-youtube" aria-hidden="true"></a>-->
+										<!--<a href="#" class="fa fa-instagram" aria-hidden="true"></a>-->
+										<!--<a href="#" class="fa fa-facebook" aria-hidden="true"></a>-->
+										<a href="https://github.com/zaxar219/" target="_blank" class="fa fa-github" aria-hidden="true"></a>
+										<a href="https://ok.ru/wowa1990.vladimir" target="_blank" class="fa fa-odnoklassniki" aria-hidden="true"></a>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+				<!--- //Контакты - Текст --->
+				<!--- Контакты - Форма --->
+				<div class="col-sm-6">
+					<div class="heading heading--medium heading--padding-top heading--white">
+						Связаться со мной
+					</div>
+
+					<form id="contact-form" class="contact-form" action="php/mail.php" method="POST">
+
+						<!-- Hidden Required Fields -->
+						<input type="hidden" name="project_name" value="Мой персональный сайт">
+						<input type="hidden" name="form_from" value="admin@zakhar.zzz.com.ua">
+						<input type="hidden" name="admin_email" value="zaxar219@mail.ru">
+						<input type="hidden" name="form_subject" value="Сообщение с сайта">
+						<!-- END Hidden Required Fields -->
+
+						<input type="text" class="contact-form__input" name="name" placeholder="Имя">
+						<input type="text" class="contact-form__input" name="email" placeholder="Email">
+
+						<biv class="clearfix">
+							<input type="text" class="contact-form__input contact-form__input--half-width" name="skype" placeholder="Skype">
+							<input type="text" class="contact-form__input contact-form__input--half-width" name="phone" placeholder="Телефон">
+
+						</biv>
+
+						<div class="contact-form__bg-pencil">
+							<textarea class="contact-form__textarea" placeholder="Ваше сообщение" name="massage"></textarea>
+						</div>
+						<input type="submit" class="contact-form__submit" value="Отправить">
+					</form>
+					<div id="answer"></div>
+				</div>
+				<!--- //Контакты - Форма --->
+			</div>
+		</div>
+	</div>
+	<!-- //Контакты -->
+	<!-- Копирайт-->
+	<div class="copyright">
 		<div class="container">
-			<div class="slider-bottom__testimonials">
-				Testimonials 
-			</div>
-			<div class="slider-bottom__border"></div>
-			<div id="bottom-slider" class="owl-carusel">
-			<!-- slid 1-->
-			<div class="slider-bottom__content">
-				<div class="slider-bottom__description">
-					Liber tempor cum soluta eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum, typin no habent claritatem insitam legentis qui facit eorum claritatem. 
-				</div>
-				<div class="slider-bottom__aftor">
-					Amanda Seyfried, Apple
-				</div>
-			</div>
-			<!-- //slid 1-->
-			<!-- slid 2-->
-			<div class="slider-bottom__content">
-				<div class="slider-bottom__description">
-					Liber tempor cum soluta eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum, typin no habent claritatem insitam legentis qui facit eorum claritatem. 
-				</div>
-				<div class="slider-bottom__aftor">
-					Amanda Seyfried, Apple
-				</div>
-			</div>
-			<!-- //slid 2-->
-			<!-- slid 3-->
-			<div class="slider-bottom__content">
-				<div class="slider-bottom__description">
-					Liber tempor cum soluta eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum, typin no habent claritatem insitam legentis qui facit eorum claritatem. 
-				</div>
-				<div class="slider-bottom__aftor">
-					Amanda Seyfried, Apple
-				</div>
-			</div>
-			<!-- //slid 3-->
-			<!-- slid 4-->
-			<div class="slider-bottom__content">
-				<div class="slider-bottom__description">
-					Liber tempor cum soluta eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum, typin no habent claritatem insitam legentis qui facit eorum claritatem. 
-				</div>
-				<div class="slider-bottom__aftor">
-					Amanda Seyfried, Apple
-				</div>
-			</div>
-			<!-- //slid 4-->
-		</div>
-		</div>
-	</div>
-	<!-- //slider-bottom -->
-	<!-- Partners -->
-	<div class="container">
-		<div class="partners">
-			<div class="partners__section">
-				Our <div class="partners__section-big">Partners</div>
-			</div>
-			<img src="img/partners/icon-1.png" alt="partner">
-			<img src="img/partners/icon-2.png" alt="partner">
-			<img src="img/partners/icon-3.png" alt="partner">
-			<img src="img/partners/icon-4.png" alt="partner">
-		</div>
-	</div>
-	<!-- //Partners -->
-	<div class="row">
-		<div class="col-sm-3">
-			<div class="blocks">
-				колонка
-			</div>
-		</div>
-		<div class="col-sm-3">
-			<div class="blocks">
-				колонка
-			</div>
-		</div>
-		<div class="col-sm-3">
-			<div class="blocks">
-				колонка
-			</div>
-		</div>
-		<div class="col-sm-3">
-			<div class="blocks">
-				колонка
-			</div>
+			<p class="copyright__label">© 2018 Захаров Владимир</p>
+			<p>Веб-разработик из Москвы, занимаюсь версткой и созданием сайтов.</p>
+			<p>Этот сайт сделал в рамках прохождения обучения по верстке на курсах от <a href="http://webcademy.ru/" target="_blank">WebCademy.ru</a></p>
 		</div>
 	</div>
 
+	<!-- //Копирайт-->
 
 
-	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
-	<script src="libs/owl-carousel/owl.carousel.min.js"></script>
+	<script src="libs/jquery/jquery.min.js"></script>
+	<script src="libs/pagescroll2id/jquery.malihu.PageScroll2id.js"></script>
+	<script type="text/javascript" src="libs/mixitup2/jquery.mixitup.min.js"></script>
+	<script src="libs/fancybox/jquery.fancybox.js"></script>
+	<script src="libs/jquery/jquery.mousewheel-3.0.6.pack.js"></script>
+	<script src="libs/jquery.validate/jquery.validate.js"></script>
+	<script src="libs/particles.js/particles.min.js"></script>
 
+	<script src="libs/scroll/jquery.nicescroll.min.js"></script>
+
+	<script src="js/navigation.js"></script>
 	<script src="js/main.js"></script>
 </body>
 

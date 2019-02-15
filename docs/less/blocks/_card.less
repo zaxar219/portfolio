@@ -1,0 +1,79 @@
+
+/*блок, в котором расположена карта*/
+.portfolio-item__card {
+	transition: all .5s ease;
+//	cursor: pointer;
+	transform: scale(.90); /*уменьшает размер блока, чтобы потом увеличить до 1*/
+	perspective: 500px; /*глубина перспективы/объем 3D-пространства*/
+}
+
+/*элемент-карта*/
+.portfolio-item__card-block {
+	width: 100%;
+	position: relative;
+	transition: all 1s ease;
+	transform-style: preserve-3d; /*определяет то, что дочерние элементы, находятся в 3D-пространстве*/
+	
+	
+}
+
+.portfolio-item__card:hover {
+	transform: scale(1) translate3d(0, -10px, 0); /*при наведении на блок с картой, он увеличивается и поднимается вверх*/
+}
+
+.portfolio-item__card:hover .side{
+	box-shadow: -36px 18px 16px 0 rgba(0, 0, 0,.8); /*при наведении на блок с картой, для видимой стороны карты задается тень*/
+}
+
+.portfolio-item__card-block-side {
+//	border-radius: 15px; /*скругляет элемент, чтобы тень повторяла контур img с изображением карты*/
+	transition: all .3s ease;
+	display: block;
+	backface-visibility: hidden; /*прячет сторону карты, которая отвернута от пользователя*/
+	box-shadow: 0px 0px 5px 1px rgba(0, 0, 0,.4); /*небольшая тень, когда карта «лежит» на поверхности*/
+	
+	
+	width: 100%;
+	height: 250px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	
+	@media (min-width: 992px) {
+		height: 200px;
+	}
+	@media (min-width: 1200px) {
+		height: 250px;
+	}
+}
+.portfolio-item__card-block-side--blackout {
+	&:before {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 100%;
+		background: rgba(0,0,0,0.5);
+	}
+}
+.portfolio-item__card-block-side__links {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/*рубашка карты*/
+.back { 
+	position: relative; 
+}
+
+/*лицевая сторона карты*/
+.front { 
+	position: absolute; /*абсолютно позиционирован внутри родителя и лежит на рубашке карты*/
+	top: 0;
+	transform: rotateY(180deg); /*отвернута от нас на 180 градусов по своей оси*/
+}
+
+.flip {    
+	transform: rotateY(180deg); /*при добавлении этого класса элемент развернется на 180 градусов*/
+}

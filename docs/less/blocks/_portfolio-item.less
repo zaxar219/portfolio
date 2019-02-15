@@ -1,0 +1,153 @@
+.portfolio-item {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 40px;
+	max-width: 370px;
+}
+
+.portfolio-item__image {
+	
+	position: relative;
+	display: block;
+	margin-bottom: 15px;
+	background-image: url(../img/placeholders/project_placeholder.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	min-height: 140px;
+	cursor: pointer;
+	overflow: hidden;
+	
+	@media (min-width: 768px) {
+		height: 154px;
+	}
+	@media (min-width: 992px) {
+		height: 200px;
+	}
+	
+	@media (min-width: 1200px) {
+		margin-bottom: 16px;
+		height: 250px;
+	}
+}
+
+.portfolio-item__image__hover {
+	position: absolute;
+	top: 100%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding-top: 60px;
+	background-color: rgba(0, 82, 194, 0.9 );
+	text-align: center;
+	font-size: 26px;
+	color: #fff;
+	transition: top 0.5s ease-out;
+	
+//	display: none;
+	
+	@media (min-width: 768px) {
+		height: 190px;
+	}
+	@media (min-width: 992px) {
+		height: 200px;
+	}
+	
+	@media (min-width: 1200px) {
+		margin-bottom: 16px;
+		height: 250px;
+	}
+	
+	
+	
+	.fa {
+		font-size: 64px;
+		margin-bottom: 15px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		
+		@media (min-width: 768px) {
+			font-size: 50px;
+		}
+		@media (min-width: 1200px) {
+			font-size: 64px;
+			position: static;
+			transform: translate(0%, 0%);
+		}
+	}
+	span {
+		display: none;
+		
+		@media (min-width: 1200px) {
+			display: inline-block;
+		}
+	}
+}
+
+.portfolio-item__image:hover .portfolio-item__image__hover {
+	display: block;
+	top: 0%;
+}
+
+.portfolio-item__title {
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 10px;
+	margin-left: 15px;
+	
+	
+	@media (min-width: 1200px) {
+		font-size: 24px;
+		margin-bottom: 5px;
+	}
+	
+	a {
+		color: #000;
+		text-decoration: none;
+		transition: all 0.2s ease-in;
+		
+		&:hover, &:active, &:focus {
+			color: @blueHeading;
+			text-decoration: none;
+		}
+		
+		@media (min-width: 1200px) {
+			border-bottom: 1px dotted #000;
+			line-height: 39px;
+			letter-spacing: 1px;
+			
+			&:hover, &:active, &:focus {
+			border-bottom: 1px dotted @blueHeading;
+		}
+		}
+	}
+}
+
+.portfolio-item__description {
+	font-size: 14px;
+	line-height: 20px;
+	margin-left: 15px;
+	
+	@media (min-width: 1200px) {
+		font-size: 16px;
+		line-height: 24px;
+		letter-spacing: 1px;
+	}
+}
+
+.m-b-34 {
+	@media (min-width: 1200px) {
+		margin-bottom: 34px;
+	}
+}
+
+.bag-img {
+	@media (min-width: 768px) {
+		height: 190px;
+	}
+	@media (min-width: 992px) {
+		height: auto;
+	}
+}
